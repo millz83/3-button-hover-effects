@@ -1,0 +1,130 @@
+body {
+    background-color: #333;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+
+
+button {
+   
+    padding:0.8em;
+    width:350px;
+    background:violet;
+    border-radius: 15px;
+    border:0;
+    color:#fff;
+    font-size:1.2em;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight:bold;
+    cursor:pointer;
+    margin:1em 2em;
+    text-transform:uppercase;
+}
+.light{
+    background: -moz-linear-gradient(-45deg,  violet 0%,violet 40%, #ffffff 50%, violet 60%, violet 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, violet), color-stop(40%, violet), color-stop(50%,#ffffff), color-stop(60%,violet), color-stop(100%,violet));
+    background: -webkit-linear-gradient(-45deg,  violet 0%, violet 40%,#ffffff 50%,violet 60%, violet 100%);
+    background: -o-linear-gradient(-45deg,   violet 0%, violet 40%,#ffffff 50%, violet 60%, violet 100%);
+    background: -ms-linear-gradient(-45deg,  violet 0%, violet 40%,#ffffff 50%, violet 60%, violet 100%);
+    background: linear-gradient(135deg, violet 0%, violet 40%,#ffffff 50%, violet 60%, violet 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='violet', endColorstr='violet',GradientType=1 );
+    background-repeat: no-repeat;  
+    background-position:0px;
+    background-size:300%;  
+    }
+    
+    .light:hover{
+      animation:light 1s;
+        -webkit-animation:light 1s;
+      
+    }
+    
+    @keyframes light {
+      0% {
+            background-position:-600px; 
+      }
+      100% { 
+            background-position:0px; 
+      }
+    }
+            
+    @-webkit-keyframes light {
+      0% {
+            background-position:-600px; 
+      }
+      100% { 
+            background-position:0px; 
+      }
+    }
+    
+    .bounce:hover{
+      animation:bounce 1s;
+        -webkit-animation:bounce 1s;
+      
+    }
+    
+    @keyframes bounce {
+      0% {
+            border-radius:15px;
+      }
+      20% {
+            border-radius:30px;
+      }  
+      60% {
+            border-radius:0px;
+            transform:scale(1.1);
+                -ms-transform:scale(1.1); /* IE 9 */
+                -webkit-transform:scale(1.1); /* Safari and Chrome */        
+      }
+      90% { 
+            transform:scale(0.98);
+                -ms-transform:scale(0.98); /* IE 9 */
+                -webkit-transform:scale(0.98); /* Safari and Chrome */         
+      }
+      100% { 
+            border-radius:15px;     
+      }
+    }
+            
+    @-webkit-keyframes bounce {
+      0% {
+            border-radius:15px;
+      }
+      20% {
+            border-radius:30px;
+      }  
+      60% {
+            border-radius:0px;
+            transform:scale(1.1);
+                -ms-transform:scale(1.1); /* IE 9 */
+                -webkit-transform:scale(1.1); /* Safari and Chrome */
+      }
+      90% { 
+            transform:scale(0.98);
+                -ms-transform:scale(0.98); /* IE 9 */
+                -webkit-transform:scale(0.98); /* Safari and Chrome */         
+      }
+      100% { 
+            border-radius:15px;     
+      }
+    }     
+    
+    .letters{
+      white-space:nowrap;
+      overflow:hidden;
+      transition: letter-spacing 3s;
+        -webkit-transition: letter-spacing 3s; /* Safari */
+      transition-delay: 0.5s;
+        -webkit-transition-delay: 0.5s;
+    }
+    
+    .letters:hover{
+      letter-spacing:15.5px;
+      transition-delay: 0s;
+        -webkit-transition-delay: 0s;  
+    }
+    
+    
